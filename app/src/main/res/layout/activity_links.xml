@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8C713"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Links">
+
+    <TextView
+        style="@style/screenTitle"
+        android:text="@string/links_title" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        style="@style/sectionHeader"
+        android:text="resources" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mental_health_logo" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btn_link1"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFE082"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="aada: manage anxiety tips"
+        android:textColor="#6A5105"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/btn_link2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BBDEFB"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="rethink mental illness"
+        android:textColor="#304FFE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>

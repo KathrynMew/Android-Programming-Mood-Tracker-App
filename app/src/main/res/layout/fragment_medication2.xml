@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".medication2">
+
+    <TextView
+        style="@style/subSectionHeader"
+        android:text="@string/meds_today_prompt" />
+
+    <RadioGroup
+        android:id="@+id/medicationToday"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/yesToday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="15dp"
+            android:text="@string/yes"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/noToday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:text="@string/no"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/naToday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:text="@string/na"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+</LinearLayout>

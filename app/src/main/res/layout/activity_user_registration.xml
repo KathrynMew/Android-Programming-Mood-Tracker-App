@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".UserRegistration">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/screenTitle"
+            android:text="@string/user_registration_title" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:text="@string/name_prompt"
+            style="@style/sectionHeader" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="Enter Preferred Name"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:textSize="25sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:text="age &amp; gender"
+            style="@style/sectionHeader" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:hint="Age"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/editGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:hint="Gender"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:text="@string/username_prompt"
+            style="@style/sectionHeader" />
+
+        <TextView
+            style="@style/hintNote"
+            android:background="#FFF59D"
+            android:paddingHorizontal="10dp"
+            android:text="@string/username_requirements"
+            app:drawableLeftCompat="@android:drawable/ic_dialog_info"
+            app:drawableTint="#FFB300" />
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Username"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:textSize="25sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:text="@string/password_prompt"
+            style="@style/sectionHeader" />
+
+        <TextView
+            style="@style/hintNote"
+            android:background="#FFF59D"
+            android:paddingHorizontal="10dp"
+            android:text="@string/password_requirements"
+            app:drawableLeftCompat="@android:drawable/ic_dialog_info"
+            app:drawableTint="#FFB300" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:textSize="25sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/submitInfoBtn"
+            android:text="@string/submit_btn"
+            style="@style/nextActionButton"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+</ScrollView>

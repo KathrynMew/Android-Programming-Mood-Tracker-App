@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".medication1">
+
+    <TextView
+        style="@style/subSectionHeader"
+        android:text="@string/take_meds_prompt" />
+
+    <RadioGroup
+        android:id="@+id/medicationsGroup"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/yesMeds"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="15dp"
+            android:text="@string/yes"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/noMeds"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="15dp"
+            android:text="@string/no"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</LinearLayout>

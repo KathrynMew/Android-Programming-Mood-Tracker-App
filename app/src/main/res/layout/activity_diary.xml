@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Diary">
+
+    <TextView
+        android:text="@string/diary_title"
+        style="@style/screenTitle" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="note"
+        style="@style/sectionHeader" />
+
+    <EditText
+        android:id="@+id/editNotes"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Notes Here"
+        android:inputType="text|textMultiLine"
+        android:isScrollContainer="true"
+        android:lines="2"
+        android:paddingHorizontal="10dp"
+        android:scrollbarSize="5dp"
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="activities"
+        style="@style/sectionHeader" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#DCEDC8"
+        android:checked="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingVertical="10dp"
+        android:text="exercise"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingVertical="10dp"
+        android:text="social interaction"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#DCEDC8"
+        android:checked="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingVertical="10dp"
+        android:text="self-care"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingVertical="10dp"
+        android:text="media streaming"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:background="#DCEDC8"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingVertical="10dp"
+        android:text="reading"
+        android:textSize="30sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/submitDailyBtn"
+        android:text="@string/submit_btn"
+        style="@style/actionButton"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>

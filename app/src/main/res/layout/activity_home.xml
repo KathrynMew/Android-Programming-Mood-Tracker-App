@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <TextView
+        style="@style/screenTitle"
+        android:text="home"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="#0F3E05"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="welcome"
+        android:textAlignment="center"
+        android:textColor="#D2D8CD"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/userPhoto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/snowball" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/dailyDiaryBtn"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="daily diary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/darkGreen"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/notesBtn"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="view my notes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/darkGreen"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/trackerBtn"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CDDC39"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="tracker"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/darkGreen"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/helpLinksBtn"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="helpful links"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/darkGreen"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/quotesBtn"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0097A7"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/quotes_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#E1F5FE"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        style="@style/nextActionButton"
+        android:text="@string/logout_btn"
+        app:cornerRadius="10dp" />
+
+
+</LinearLayout>

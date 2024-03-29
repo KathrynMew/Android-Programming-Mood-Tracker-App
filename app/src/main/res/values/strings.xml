@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">mood tracker</string>
+
+    <!-- Activity Titles -->
+    <string name="user_registration_title">user registration</string>
+    <string name="login_title">login</string>
+    <string name="home_title">home</string>
+    <string name="diary_title">daily diary</string>
+    <string name="notes_title">view my notes</string>
+    <string name="tracker_title">tracker</string>
+    <string name="links_title">helpful links</string>
+    <string name="quotes_title">motivational quotes</string>
+
+    <!-- Prompt Strings -->
+    <string name="name_prompt">name</string>
+    <string name="age_prompt">age</string>
+    <string name="gender_prompt">gender</string>
+    <string name="username_prompt">username</string>
+    <string name="password_prompt">password</string>
+    <string name="filter_prompt">filter notes</string>
+    <string name="mood_prompt">how do you feel?</string>
+    <string name="feeling_prompt">press corresponding emoticon</string>
+    <string name="anxiety">anxiety level</string>
+    <string name="meds">medication</string>
+    <string name="take_meds_prompt">currently take any medications?</string>
+    <string name="meds_today_prompt">take medication on time today?</string>
+    <string name="anxiety_hint">0 indicates not anxious\n5 indicates high anxiety</string>
+    <string name="username_requirements">must be 5 chars\n(must be alphanumeric)</string>
+    <string name="password_requirements">must be 8 chars\n(can be alphanumeric)\nmust start with upper case</string>
+    <string name="theme_prompt">theme</string>
+
+    <!-- Answers -->
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="na">na</string>
+    <string name="very_sad">feeling: very sad</string>
+    <string name="sad">feeling: sad</string>
+    <string name="neutral">feeling: neutral</string>
+    <string name="happy">feeling: happy</string>
+    <string name="very_happy">feeling: very happy</string>
+
+
+    <!-- Buttons -->
+    <string name="submit_btn">submit</string>
+    <string name="register_btn">register</string>
+    <string name="back_btn">home</string>
+    <string name="logout_btn">logout</string>
+    <string name="filter_btn">filter</string>
+</resources>
